@@ -46,6 +46,13 @@
             <artifactId>hsqldb</artifactId>
         </dependency>
 
+        <!-- use postgresql deps -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4-1206-jdbc42</version>
+        </dependency>
+
         <!-- swagger api expose deps -->
         <dependency>
             <groupId>io.springfox</groupId>

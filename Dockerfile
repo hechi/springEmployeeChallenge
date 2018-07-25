@@ -3,4 +3,5 @@ VOLUME /tmp
 #ARG JAR_FILE
 #COPY ${JAR_FILE} /app.jar
 COPY target/EmployeeApi-0.1.jar /app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom", "-jar","/app.jar","--spring.profiles.active=prod"]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["sh","/entrypoint.sh"]

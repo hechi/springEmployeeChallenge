@@ -1,6 +1,23 @@
 version: "3"
 services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: changeme
+      PGDATA: /data/postgres
+    volumes:
+       - ./db/data:/data/postgres
+       - ./db/init:/docker-entrypoint-initdb.d/
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
   employeeApi:
+    links:
+      - postgres:postgres"
     container_name: employeeApiContainer
     build:
       context: .
@@ -8,3 +25,9 @@ services:
     image: employee_api:latest
     ports:
           - "8080:8080"
+    networks:
+          - postgres
+
+networks:
+  postgres:
+    driver: bridge
