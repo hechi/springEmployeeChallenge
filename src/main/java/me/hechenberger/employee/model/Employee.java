@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.Arrays;
 import java.util.Date;
@@ -24,13 +25,16 @@ public class Employee implements Cloneable {
   @ApiModelProperty(notes = "Unique uuid to identify a user")
   private Long id;
   @Email(message = "Please provide a valid Email")
+  @NotEmpty
   @Column(unique = true, nullable = false)
   @ApiModelProperty(notes = "An employee's email address. This is unique in the system")
   private String email;
   @NotNull
+  @NotEmpty
   @ApiModelProperty(notes = "Firstname of an Employee")
   private String firstName;
   @NotNull
+  @NotEmpty
   @ApiModelProperty(notes = "Lastname of an Employee")
   private String lastName;
   @NotNull

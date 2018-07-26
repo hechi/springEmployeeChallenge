@@ -4,22 +4,29 @@ package model;
 import static org.assertj.core.api.Assertions.*;
 
 import me.hechenberger.employee.model.Employee;
+import org.hibernate.validator.HibernateValidator;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
+import javax.validation.ConstraintViolation;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Test the model
  */
 public class EmployeeTest {
   private Employee dummyEmployee;
-  private Employee dummyEmployeeWithHobbies;
+  private LocalValidatorFactoryBean validator;
+
 
   @Before
   public void setUp(){
     dummyEmployee = new Employee("john.doe@example.com","John","Doe",new Date());
-    dummyEmployeeWithHobbies = new Employee("jane.doe@example.com","Jane","Doe",new Date(),new String[]{"soccer","music","dance"});
+    validator = new LocalValidatorFactoryBean();
+    validator.setProviderClass(HibernateValidator.class);
+    validator.afterPropertiesSet();
   }
 
   @Test
@@ -36,5 +43,12 @@ public class EmployeeTest {
     assertThat(dummy2.hashCode()).isEqualTo(dummyEmployee.hashCode());
     dummy2.setFirstName("John Hans");
     assertThat(dummy2.hashCode()).isNotEqualTo(dummyEmployee.hashCode());
+  }
+
+  @Test
+  public void checkValidation(){
+    Employee dummy = new Employee("","","",new Date());
+    Set<ConstraintViolation<Employee>> constraintViolations = validator.validate(dummy);
+    assertThat(constraintViolations.size()).isEqualTo(3); // violate 3 constrains
   }
 }

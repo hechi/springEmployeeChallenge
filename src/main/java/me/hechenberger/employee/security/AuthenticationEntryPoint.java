@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * set header for basic authentications for rest api
+ * Set header for basic authentications for rest api
  * look into {@link me.hechenberger.employee.configuration.SecurityConfiguration} for more details
  */
 @Component

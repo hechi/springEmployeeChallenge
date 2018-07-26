@@ -12,6 +12,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ * Configure spring security and add dummy user
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -24,7 +27,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     PasswordEncoder encoder = new BCryptPasswordEncoder();
     //add dummy entries
     auth.inMemoryAuthentication().passwordEncoder(encoder).withUser("admin").password(encoder.encode("1234")).roles("ADMIN");
-    auth.inMemoryAuthentication().passwordEncoder(encoder).withUser("user").password(encoder.encode("1234")).roles("USER");
   }
 
   @Override
