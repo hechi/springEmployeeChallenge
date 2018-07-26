@@ -51,7 +51,6 @@
         </dependency>
 
         <!-- in memory hsqldb deps -->
-        <!-- Todo replace with a real DB -->
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>

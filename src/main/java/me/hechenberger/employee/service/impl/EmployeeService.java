@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * TODO: provide exceptions
  * This service handel the connection to the repository
  */
 @Service
@@ -25,7 +24,6 @@ public class EmployeeService implements IEmployeeService {
    * @param employee the new employee
    * @return null if the employee with the email exists, otherwise return the saved employee
    */
-  //TODO throw error if employee esists with the same email
   @Override
   public Employee save(Employee employee) {
     if (employeeRepository.existsByEmail(employee.getEmail())) {
@@ -52,7 +50,6 @@ public class EmployeeService implements IEmployeeService {
    */
   @Override
   public Employee getByIdx(Long id) {
-    // TODO: probably throw error
     if (employeeRepository.existsById(id)) {
       return employeeRepository.findById(id).get();
     }
@@ -66,14 +63,12 @@ public class EmployeeService implements IEmployeeService {
    * @param employeeToUpdate employee with new field values
    * @return corresponding employee or null if employee does not exists or tries to change his email address to an existing one
    */
-  // TODO: probably throw error
   @Override
   public Employee update(Employee employeeToUpdate) {
-    //TODO: ask should i save an employee if it does not exists?
-    //TODO: only allow changing of the email address if it does not exists in the system
     if (employeeToUpdate.getId() != null
             && employeeRepository.existsById(employeeToUpdate.getId())) {
       Employee checkMail = employeeRepository.findByEmail(employeeToUpdate.getEmail());
+      // only allow changing of the email address if it does not exists in the system
       if (checkMail.getId() == employeeToUpdate.getId()) {
         return employeeRepository.save(employeeToUpdate);
       }
