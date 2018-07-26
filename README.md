@@ -2,6 +2,31 @@
 
 The goal is to implement an application that handles the employees of a company. The application must expose a REST API, so that other services can communicate with it easily.
 
+### Challenge
+
+1. Create an employee model (Uuid, email, fullname, birthday, list of hobbies)
+2. Get a list of all employees (response as JSON Array)
+3. Get a specific employee by uuid (response as JSON Object)
+4. Update an employee
+5. Delete an employee
+
+additional tasks
+* expose API endpoints with swagger
+* add authentication to create, update and delete functions
+* connect a real database to store the employee's via docker container 
+
+restriction
+* email is unique
+
+#### What can you do until now
+
+* Create, Update, Read and Delete employee's
+  * Read can be done without authentication
+  * Create, Update and Delete has to be done as the default user *admin*
+* View the API via Swagger
+* Build a docker image
+* Use docker and connect it to an real database
+
 ## Disclaimer
 
 This was a challenge it is not for production usage. So if you have tips or suggestion how to make it nicer and cleaner let me know.
@@ -9,6 +34,7 @@ This was a challenge it is not for production usage. So if you have tips or sugg
 ## Getting Started
 
 These instructions will get you a running server with a simple user authentication.
+
 
 ### Prerequisites
 
