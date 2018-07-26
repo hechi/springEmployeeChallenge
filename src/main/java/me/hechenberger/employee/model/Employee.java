@@ -1,5 +1,6 @@
 package me.hechenberger.employee.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -39,6 +40,7 @@ public class Employee implements Cloneable {
   private String lastName;
   @NotNull
   @ApiModelProperty(notes = "Birthday of an Employee")
+  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "YYYY-MM-DD")
   private Date birthday;
   @Column(nullable = true)
   @ApiModelProperty(notes = "List of hobbies (for example, \"soccer\", \"music\", etc)")
