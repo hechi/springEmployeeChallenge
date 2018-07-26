@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd6b3830-54e1-4498-8834-f86428f3edf0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/screenshots/swagger-ui.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/configuration/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/configuration/SwaggerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,8 +89,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="90" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+            <state relative-caret-position="384">
+              <caret line="33" column="62" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -989,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="90" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+        <state relative-caret-position="384">
+          <caret line="33" column="62" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
         </state>
       </provider>
     </entry>

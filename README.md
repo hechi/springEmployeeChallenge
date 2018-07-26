@@ -28,9 +28,10 @@ The default user to do operations on the API is:
 Username: admin
 Password: 1234
 
-#### View API with [Swagger](https://swagger.io/)
+#### API
 
-The swagger-ui can be accessed via http://localhost:8080/swagger-ui.html
+The API is exposed via [Swagger](https://swagger.io/) and can be accessed under http://localhost:8080/swagger-ui.html
+![swagger-ui](/screenshots/swagger-ui.png?raw=true "Swagger-UI")
 
 ## Configuration / Profiles
 
