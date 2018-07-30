@@ -26,7 +26,7 @@ public class ApiUserService extends AbstractGenericServiceImpl<ApiUser> implemen
   }
 
   @Override
-  public ApiUser registration(ApiUser user) {
+  public ApiUser save(ApiUser user) {
     user.setPassword(passwordEncoder.encode(user.getPassword()));
     return super.save(user);
   }

@@ -10,13 +10,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+//TODO: add API annotations
 @Entity
 @Table
 public class ApiUser implements UserDetails {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @NotNull
   private Long id;
 
   @Column(unique = true)
@@ -35,6 +35,7 @@ public class ApiUser implements UserDetails {
   }
 
   @Override
+  @JsonIgnore
   public Collection<? extends GrantedAuthority> getAuthorities() {
     List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
     return authorities;
