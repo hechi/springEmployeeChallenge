@@ -3,6 +3,7 @@ package me.hechenberger.employee.controller.impl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import me.hechenberger.employee.controller.IController;
+import me.hechenberger.employee.controller.IEmployeeController;
 import me.hechenberger.employee.model.Employee;
 import me.hechenberger.employee.service.IEmployeeService;
 import org.slf4j.Logger;
@@ -21,7 +22,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/api/v1/employee", produces = MediaType.APPLICATION_JSON_VALUE)
 @Api(description = "Employee restful API")
-public class EmployeeController implements IController<Employee> {
+public class EmployeeController implements IEmployeeController {
 
   //for logging output
   private Logger LOG = LoggerFactory.getLogger(EmployeeController.class);

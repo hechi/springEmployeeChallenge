@@ -10,13 +10,13 @@ import java.util.List;
 
 /**
  * This service handel the connection to the repository
+ * TODO: use also the AbstractGenericServiceImpl
  */
 @Service
 public class EmployeeService implements IEmployeeService {
 
   @Autowired
   private EmployeeRepository employeeRepository;
-
 
   /**
    * Save an employee if the email does not exists in the system

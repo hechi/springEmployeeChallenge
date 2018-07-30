@@ -1,6 +1,8 @@
 package me.hechenberger.employee.configuration;
 
 import me.hechenberger.employee.security.AuthenticationEntryPoint;
+import me.hechenberger.employee.service.IApiUserService;
+import me.hechenberger.employee.service.impl.ApiUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -23,10 +25,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
   private AuthenticationEntryPoint entryPoint;
 
   @Autowired
+  private IApiUserService apiUserService;
+
+  @Autowired
   public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-    PasswordEncoder encoder = new BCryptPasswordEncoder();
+//    PasswordEncoder encoder = new BCryptPasswordEncoder();
     //add dummy entries
-    auth.inMemoryAuthentication().passwordEncoder(encoder).withUser("admin").password(encoder.encode("1234")).roles("ADMIN");
+//    auth.inMemoryAuthentication().passwordEncoder(encoder).withUser("admin").password(encoder.encode("1234")).roles("ADMIN");
+    auth.userDetailsService(apiUserService).passwordEncoder(ApiUserService.passwordEncoder);
   }
 
   @Override

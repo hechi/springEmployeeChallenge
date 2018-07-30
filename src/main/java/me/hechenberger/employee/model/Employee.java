@@ -25,23 +25,28 @@ public class Employee implements Cloneable {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @ApiModelProperty(notes = "Unique uuid to identify a user")
   private Long id;
+
   @Email(message = "Please provide a valid Email")
   @NotEmpty
   @Column(unique = true, nullable = false)
   @ApiModelProperty(notes = "An employee's email address. This is unique in the system")
   private String email;
+
   @NotNull
   @NotEmpty
   @ApiModelProperty(notes = "Firstname of an Employee")
   private String firstName;
+
   @NotNull
   @NotEmpty
   @ApiModelProperty(notes = "Lastname of an Employee")
   private String lastName;
+
   @NotNull
   @ApiModelProperty(notes = "Birthday of an Employee")
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "YYYY-MM-DD")
   private Date birthday;
+
   @Column(nullable = true)
   @ApiModelProperty(notes = "List of hobbies (for example, \"soccer\", \"music\", etc)")
   private String[] hobbies;
