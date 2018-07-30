@@ -23,7 +23,7 @@ public class Employee implements Cloneable {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @ApiModelProperty(notes = "Unique uuid to identify a user")
+  @ApiModelProperty(notes = "Unique uuid to identify an employee")
   private Long id;
 
   @Email(message = "Please provide a valid Email")

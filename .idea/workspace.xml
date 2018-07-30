@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd6b3830-54e1-4498-8834-f86428f3edf0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/Initializer/DbInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/controller/ApiUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/ApiUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/ApiUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/ApiUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/ApiUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/IApiUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/IApiUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/impl/ApiUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/impl/ApiUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,10 +21,9 @@
       <file leaf-file-name="ApiUserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/ApiUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+            <state relative-caret-position="75">
+              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1246#1247#0" expanded="true" />
                 <element signature="e#1311#1312#0" expanded="true" />
                 <element signature="e#1372#1373#0" expanded="true" />
@@ -46,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/controller/ApiUserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="471">
-              <caret line="102" column="4" lean-forward="true" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+              <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,11 +70,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="application-prod.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-dev.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AuthenticationTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/security/AuthenticationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="82" column="3" lean-forward="true" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
+              <caret line="82" column="3" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,27 +100,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IApiUserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/IApiUserService.java">
+      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="86" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
+            <state relative-caret-position="-607">
+              <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiUserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/impl/ApiUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,8 +115,8 @@
       <file leaf-file-name="ApiUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/ApiUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+            <state relative-caret-position="344">
+              <caret line="30" column="100" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,15 +129,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IApiUserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/IApiUserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -178,7 +168,6 @@
         <option value="$PROJECT_DIR$/docker-compose-onlyPost.yml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
         <option value="$PROJECT_DIR$/src/test/java/controller/EmployeeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/security/AuthenticationEntryPoint.java" />
         <option value="$PROJECT_DIR$/src/test/java/service/EmployeeServiceTest.java" />
@@ -187,7 +176,6 @@
         <option value="$PROJECT_DIR$/runDocker.sh" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/respository/ApiUserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/impl/AbstractGenericServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/impl/EmployeeService.java" />
@@ -196,13 +184,15 @@
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/IEmployeeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/EmployeeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/Initializer/DbInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/ApiUser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/IApiUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/impl/ApiUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/ApiUserController.java" />
         <option value="$PROJECT_DIR$/src/test/java/security/AuthenticationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/controller/ApiUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/ApiUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/ApiUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
@@ -435,7 +425,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApiUserController">
+  <component name="RunManager" selected="Application.ApplicationStart">
     <configuration name="ApplicationStart" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.hechenberger.employee.ApplicationStart" />
       <module name="EmployeeApi" />
@@ -655,8 +645,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiUserController" />
         <item itemvalue="JUnit.All in EmployeeApi" />
+        <item itemvalue="JUnit.ApiUserController" />
         <item itemvalue="JUnit.AuthenticationTest" />
         <item itemvalue="JUnit.EmployeeRepositoryTest" />
       </list>
@@ -676,12 +666,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_EmployeeApi - 2018.07.26 at 20h 09m 47s.xml">
-      <configuration name="All in EmployeeApi" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_EmployeeApi - 2018.07.26 at 22h 53m 00s.xml">
-      <configuration name="All in EmployeeApi" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_EmployeeApi - 2018.07.30 at 20h 27m 53s.xml">
       <configuration name="All in EmployeeApi" configurationId="JUnit" />
     </history-entry>
@@ -705,6 +689,12 @@
     </history-entry>
     <history-entry file="ApiUserController - 2018.07.30 at 21h 37m 23s.xml">
       <configuration name="ApiUserController" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_EmployeeApi - 2018.07.30 at 21h 39m 25s.xml">
+      <configuration name="All in EmployeeApi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_EmployeeApi - 2018.07.30 at 21h 47m 30s.xml">
+      <configuration name="All in EmployeeApi" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -757,7 +747,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/ApiUserController.java</url>
-          <line>57</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -959,13 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -1089,37 +1072,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/IApiUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/ApiUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,29 +1092,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/service/impl/ApiUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#227#228#0" expanded="true" />
             <element signature="e#248#249#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/ApiUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1372#1373#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1173,7 +1111,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/security/AuthenticationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="82" column="3" lean-forward="true" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
+          <caret line="82" column="3" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1193,10 +1131,61 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/controller/ApiUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
-          <caret line="102" column="4" lean-forward="true" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+          <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-607">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/model/ApiUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="30" column="100" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/hechenberger/employee/controller/impl/ApiUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <folding>
+            <element signature="e#1246#1247#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1372#1373#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,8 @@
 package me.hechenberger.employee.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -12,18 +14,21 @@ import java.util.List;
 
 //TODO: add API annotations
 @Entity
-@Table
+@ApiModel(description = "User model, to allow different restful operations")
 public class ApiUser implements UserDetails {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @ApiModelProperty(notes = "Unique uuid to identify a user")
   private Long id;
 
   @Column(unique = true)
   @NotNull
+  @ApiModelProperty(notes = "Username and loginname of a user")
   private String username;
 
   @NotNull
+  @ApiModelProperty(notes = "Password to login. This field will be stored as an hash in the database")
   private String password;
 
   public ApiUser() {
