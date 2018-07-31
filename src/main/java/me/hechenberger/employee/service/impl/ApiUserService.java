@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class ApiUserService extends AbstractGenericServiceImpl<ApiUser> implements IApiUserService {
 
-  //TODO: extract it into a util class
   public static final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
   @Autowired

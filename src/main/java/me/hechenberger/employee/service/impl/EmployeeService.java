@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * This service handel the connection to the repository
- * TODO: use also the AbstractGenericServiceImpl
  */
 @Service
 public class EmployeeService implements IEmployeeService {

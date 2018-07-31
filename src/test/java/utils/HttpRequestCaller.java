@@ -9,6 +9,9 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.nio.charset.Charset;
 
+/**
+ * Represent an http request mock caller, which allows to set the mock, url and the contentype to json.
+ */
 public class HttpRequestCaller {
 
   private final MockMvc mockMvc;
@@ -17,62 +20,62 @@ public class HttpRequestCaller {
           MediaType.APPLICATION_JSON.getSubtype(),
           Charset.forName("utf8"));
 
-  public HttpRequestCaller(MockMvc mockMvc, String url){
+  public HttpRequestCaller(MockMvc mockMvc, String url) {
     this.mockMvc = mockMvc;
     this.url = url;
   }
 
-  public ResultActions get() throws Exception{
-    return get(null,null);
+  public ResultActions get() throws Exception {
+    return get(null, null);
   }
 
-  public ResultActions get(SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception{
-    return get(null,user);
+  public ResultActions get(SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception {
+    return get(null, user);
   }
 
-  public ResultActions get(String param) throws Exception{
-    return get(param,null);
+  public ResultActions get(String param) throws Exception {
+    return get(param, null);
   }
 
-  public ResultActions get(String param, SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception{
-    MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get(url+(param!=null?param:"")).contentType(CONTENTTYPE);
-    if(user!=null){
+  public ResultActions get(String param, SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception {
+    MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get(url + (param != null ? param : "")).contentType(CONTENTTYPE);
+    if (user != null) {
       request.with(user);
     }
     return mockMvc.perform(request);
   }
 
-  public ResultActions post(Object body) throws Exception{
-    return post(body,null);
+  public ResultActions post(Object body) throws Exception {
+    return post(body, null);
   }
 
-  public ResultActions post(Object body, SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception{
+  public ResultActions post(Object body, SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception {
     MockHttpServletRequestBuilder request = MockMvcRequestBuilders.post(url).contentType(CONTENTTYPE).content(TestUtils.json(body));
-    if(user!=null){
+    if (user != null) {
       request.with(user);
     }
     return mockMvc.perform(request);
   }
 
-  public ResultActions put(Object body) throws Exception{
-    return put(body,null);
+  public ResultActions put(Object body) throws Exception {
+    return put(body, null);
   }
 
-  public ResultActions put(Object body, SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception{
+  public ResultActions put(Object body, SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception {
     MockHttpServletRequestBuilder request = MockMvcRequestBuilders.put(url).contentType(CONTENTTYPE).content(TestUtils.json(body));
-    if(user!=null){
+    if (user != null) {
       request.with(user);
     }
     return mockMvc.perform(request);
   }
 
-  public ResultActions delete(Object body) throws Exception{
-    return delete(body,null);
+  public ResultActions delete(Object body) throws Exception {
+    return delete(body, null);
   }
 
-  public ResultActions delete(Object body, SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception{
+  public ResultActions delete(Object body, SecurityMockMvcRequestPostProcessors.UserRequestPostProcessor user) throws Exception {
     MockHttpServletRequestBuilder request = MockMvcRequestBuilders.delete(url).contentType(CONTENTTYPE).content(TestUtils.json(body));
-    if(user!=null){
+    if (user != null) {
       request.with(user);
     }
     return mockMvc.perform(request);

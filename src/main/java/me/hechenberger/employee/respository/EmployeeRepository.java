@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
   /**
-   * find an employee his email address
+   * find an employee by his email address
    *
    * @param email to search for
    * @return the employee with the email address or null if non was found

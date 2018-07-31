@@ -12,7 +12,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-//TODO: add API annotations
+/**
+ * This model defines a apiUser. It is separated from the employee model because not every employee need an api access.
+ */
 @Entity
 @ApiModel(description = "User model, to allow different restful operations")
 public class ApiUser implements UserDetails {
@@ -56,12 +58,13 @@ public class ApiUser implements UserDetails {
     return this.username;
   }
 
-  public void setPassword(String newPassword){
+  public void setPassword(String newPassword) {
     this.password = newPassword;
   }
 
   /**
    * {@link UserDetails#isAccountNonExpired()}
+   *
    * @return
    */
   @Override
@@ -72,6 +75,7 @@ public class ApiUser implements UserDetails {
 
   /**
    * {@link UserDetails#isAccountNonLocked()}
+   *
    * @return
    */
   @Override
@@ -82,6 +86,7 @@ public class ApiUser implements UserDetails {
 
   /**
    * {@link UserDetails#isCredentialsNonExpired()}
+   *
    * @return
    */
   @Override
@@ -92,6 +97,7 @@ public class ApiUser implements UserDetails {
 
   /**
    * {@link UserDetails#isEnabled()}
+   *
    * @return
    */
   @Override

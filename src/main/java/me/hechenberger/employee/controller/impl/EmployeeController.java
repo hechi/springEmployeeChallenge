@@ -2,7 +2,6 @@ package me.hechenberger.employee.controller.impl;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import me.hechenberger.employee.controller.IController;
 import me.hechenberger.employee.controller.IEmployeeController;
 import me.hechenberger.employee.model.Employee;
 import me.hechenberger.employee.service.IEmployeeService;

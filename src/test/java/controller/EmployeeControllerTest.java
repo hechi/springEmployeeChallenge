@@ -1,7 +1,5 @@
 package controller;
 
-// for simple testing
-
 import static org.assertj.core.api.Assertions.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static utils.TestUtils.readObj;

@@ -9,6 +9,9 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+/**
+ * Initialize a default API User admin with the password 1234
+ */
 @Component
 @Order(1) // run this initializer first
 @ConditionalOnProperty(name = "app.db-init", havingValue = "true")

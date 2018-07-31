@@ -3,11 +3,8 @@ package utils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import me.hechenberger.employee.model.Employee;
-import org.springframework.http.MediaType;
-import org.springframework.mock.http.MockHttpOutputMessage;
 import org.springframework.test.web.servlet.ResultActions;
 
-import java.io.IOException;
 import java.util.Date;
 
 /**
