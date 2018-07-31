@@ -9,8 +9,6 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
-
 @Component
 @Order(1) // run this initializer first
 @ConditionalOnProperty(name = "app.db-init", havingValue = "true")

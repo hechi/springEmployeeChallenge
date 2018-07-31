@@ -8,6 +8,7 @@ import org.hibernate.validator.HibernateValidator;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+import utils.TestUtils;
 
 import javax.validation.ConstraintViolation;
 import java.util.Date;
@@ -23,7 +24,7 @@ public class EmployeeTest {
 
   @Before
   public void setUp(){
-    dummyEmployee = new Employee("john.doe@example.com","John","Doe",new Date());
+    dummyEmployee = TestUtils.getRandomDummy();
     validator = new LocalValidatorFactoryBean();
     validator.setProviderClass(HibernateValidator.class);
     validator.afterPropertiesSet();

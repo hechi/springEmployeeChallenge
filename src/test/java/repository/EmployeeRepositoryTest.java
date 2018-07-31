@@ -15,8 +15,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.Date;
+import utils.TestUtils;
 
 /**
  * check only the own defined functions in the employee repository
@@ -36,8 +35,8 @@ public class EmployeeRepositoryTest {
   @Before
   public void setUp(){
     // create dummies
-    dummyEmployee = new Employee("john.doe@example.com","John","Doe",new Date());
-    dummyEmployeeWithHobbies = new Employee("jane.doe@example.com","Jane","Doe",new Date(),new String[]{"soccer","music","dance"});
+    dummyEmployee = TestUtils.getRandomDummy();
+    dummyEmployeeWithHobbies = TestUtils.getRandomDummy();
   }
 
   @After

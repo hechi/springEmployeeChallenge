@@ -16,9 +16,8 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.validation.Validator;
+import utils.TestUtils;
 
-import javax.validation.Validation;
 import java.util.Date;
 import java.util.List;
 
@@ -44,8 +43,8 @@ public class EmployeeServiceTest {
 
   @Before
   public void setUp(){
-    dummyEmployee = new Employee("john.doe@example.com","John","Doe",new Date());
-    dummyEmployeeWithHobbies = new Employee("jane.doe@example.com","Jane","Doe",new Date(),new String[]{"soccer","music","dance"});
+    dummyEmployee = TestUtils.getRandomDummy();
+    dummyEmployeeWithHobbies = TestUtils.getRandomDummy();
   }
 
   // check empty list
